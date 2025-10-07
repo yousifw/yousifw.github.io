@@ -1,14 +1,17 @@
 ---
-
+import "../styles/global.scss";
+import { Font } from "astro:assets";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="description" content="blog" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<Font cssVariable="--font-roboto" preload />
+		<title>Yousif - Blog</title>
 	</head>
 	<body>
 		<h1>Astro</h1>
