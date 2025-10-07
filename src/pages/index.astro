@@ -1,19 +1,9 @@
 ---
-import "../styles/global.scss";
-import { Font } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="blog" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<Font cssVariable="--font-roboto" preload />
-		<title>Yousif - Blog</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+	title="Yousif - Blog"
+	description="Personal Blog about Web Development, Machine Learning and Mixed Reality">
+	<h1>Welcome to My Blog</h1>
+</BaseLayout>
